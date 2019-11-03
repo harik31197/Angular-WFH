@@ -1,0 +1,12 @@
+<div *ngIf = "employee">
+
+        <h2>{{employee.name | uppercase}}'S Details</h2>
+        <div class="container">
+                <div><span>Id: </span>{{employee.id}}</div>
+                <div><label>Name:<input [(ngModel)]="employee.name" placeholder="name"/></label></div>
+        </div> 
+       <div class="btn">
+            <button type="button" class="btn btn-primary" (click) = "save()" routerLink="/detail/{{employee.id}}">Save</button>
+            <button type="button" class="btn btn-primary" (click) = "goBack()">Go Back</button>
+       </div>
+</div>
