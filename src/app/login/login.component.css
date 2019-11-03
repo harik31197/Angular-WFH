@@ -1,0 +1,13 @@
+form
+{
+max-width: 200px;
+transform: translate(300%,50%);
+}
+.form-control
+{
+    padding: 10px 10px;
+}
+label
+{
+    padding: 10px;
+}
